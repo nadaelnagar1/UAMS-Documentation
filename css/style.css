@@ -186,7 +186,7 @@ p {
 }
 
 .section {
-    padding: 180px 0;
+    padding: 5px 0 0;
     position: relative;
     display: block;
 }
@@ -212,9 +212,14 @@ strong {
 }
 
 .dark-text {
-    font-size: 4.125rem;
-    line-height: 4.063rem;
+    font-size: 3rem;
+    line-height: 2rem;
     font-weight: 300;
+}
+
+.dark-text-header{
+    font-size: 4.125rem;
+    line-height: 3rem;
 }
 
 h4 a {
