@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   
+
+    <title>UAMS Documentation</title>
+
+    <link rel="shortcut icon" href="images/Uams.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stroke.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shCore.css" media="all">
+    <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shThemeRDark.css" media="all">
+
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+
+
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+            document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelector('#mode').addEventListener('click',()=>{
+                document.querySelector('html').classList.toggle('dark');
+            })
+        });
+
+
+    </script>
+
+    <div id="wrapper">
+        <div class="container">
+
+            <section id="top" class="section docs-heading">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="big-title text-center">
+                            <div class="logo-container">
+                            <img src="images/logo.png">
+                            <h4>Clinic Block Request</h4>
+                            </div>
+                            
+                            <h1>Documentation</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+            </section>
+            <!-- end section -->
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
+                        <!-- <ul class="nav"> -->
+                            <li><a href="#line1">Getting started</a></li>
+                            
+                            <li><a href="#line2">Project Structure</a>
+                            </li>
+
+                            <ul class="nav">
+                                <li><a href="#line3">Admin</a>
+                                    <ul class="nav">
+                                        <li><a href="#line4">Systems</a>
+                                            <ul class="nav">
+                                                <li class="last-child"><a href="#line5">Permission Definition</a></li>
+                                                <li class="last-child"><a href="#line6">Roles</a></li>
+                                                <li class="last-child"><a href="#line7">ActiveDirectory Management</a></li>
+                                            </ul>
+                                        
+                                        </li>
+                                        <li><a href="#line7_1">Clinic</a>
+                                            <ul class="nav">
+                                                <li class="last-child"><a href="#line7_2">Clinic</a></li>
+                                                <li class="last-child"><a href="#line7_3">Request Reason</a></li>
+                                            </ul></li>
+                                        <li><a href="#line7_4">People</a>
+                                            <ul class="nav">
+                                                <li class="last-child"><a href="#line7_5">Users</a></li>
+                                                <li class="last-child"><a href="#line7_6">Providers</a></li>
+                                            </ul></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#line8">Request</a></li>
+                                <li><a href="#line9"> Report</a></li>
+                                <li><a href="#line10">Calendar</a>
+                                </li>
+
+                            </ul>
+                   
+                        <!-- </ul> -->
+                    </nav >
+                </div>
+                <div class="col-md-9">
+                    <section class="welcome">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                               <h2 class="dark-text">Introduction<hr></h2>
+                                <div class="row">
+
+                                    <div class="col-md-12 full">
+                                    
+                                             <p>UAMS Clinic Block Request is an online system that support the Provider Time Unavailable policy, To ensure all clinical schedule appropriately designate provider unavailability and that “unavailable time” is
+                                                communicated in a timeframe that minimizes both disruption to clinical operations as well as negative impact on patient care.<br><br> It allows user to enter requests and allows administrators to track and report on requests for clinic blocks and operating room (OR) releases.  
+                                            <br>
+                                           
+                                            </p>
+                                    </div>
+
+                                </div>
+                                <!-- end row -->
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="line1" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Getting started <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                            
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line2" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Project Structure <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                    
+
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line3" >
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Admin <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>The Admin Page allows you to access different sections based on your role within the system, including Systems, Clinic, and People.</p>
+                                <img  class="images" alt="Admin Page" src="./images/Admin/adminPage.PNG">
+                            </div>
+                            <!-- end col -->
+                        </div>
+
+
+                  
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line4" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Systems <hr></h2>
+                            </div>
+                            <p> The Systems section is where authorized users can access and perform operations on Permission Definitions, Roles, and Active Directory Management.</p>
+                            <img  class="images" alt="systems" src="./images/Admin/Systems.PNG">
+                        </div>
+                        <!-- end row -->
+
+                     
+                       
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line5" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Permission-Definition <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <p>Permission Definition is the section where authorized users can view the permissions for every page within the system.</p>
+                            <img alt="Permission Definition" class="images" src="./images/Admin/Permission-Definition.PNG">
+
+
+                            <!-- end col -->
+
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line6" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Roles <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+
+                            <p> Roles is the section where authorized users can : </p>
+                        <ul>
+                            <li><p>- View all existing roles </p></li>
+                        <img alt="view roles" class="images" src="./images/Admin/viewRoles.PNG">
+                            <li><p>- Create new roles</p></li>
+                        <img alt="add role" class="images" src="./images/Admin/addRole.PNG">
+                            <li><p>- Assign permissions to roles</p></li>
+                        <img alt="assign permissions to role" class="images" src="./images/Admin/assignPermToNewRole.PNG">
+                            <li><p>- Update existing roles along with their associated permissions.</p></li>
+                        <img alt="update role" class="images" src="./images/Admin/updateExistingRole.PNG">
+                          </ul>
+
+                            <!-- end col -->
+
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line7" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">ActiveDirectory Management<hr></h2>
+                            </div>
+                            <p>Active Directory Management is the section where authorized users can configure LDAP authentication settings, 
+                                as well as save and reset them as needed.</p>
+                                <img alt="update role" class="images" src="./images/Admin/activeDirectory.PNG">
+                           
+                        </div>
+                        <!-- end row -->
+                    </section>
+
+                    <section id="line7_1">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Clinic <hr></h2>
+
+                            </div>
+                        </div>
+                    </section>
+                     
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h4 id="line7_2">Clinic </h4>
+                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                        <hr>
+
+                        <div class="row">
+                           <div class="col-md-8">
+                                <h4 id="line7_3">Request Reason </h4>
+                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <hr>
+<section id="line7_4">
+    <div class="row">
+        <div class="col-md-12 left-align" >
+            <h2 class="dark-text">People <hr></h2>
+            <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
+        </div>
+        <!-- end col -->
+    </div>
+</section>
+
+                        <!-- end row -->
+
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h4 id="line7_5">Users </h4>
+                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <hr>
+
+                        <div class="row">
+                           
+                            <div class="col-md-8">
+                                <h4 id="line7_6">Providers </h4>
+                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <hr>
+
+
+
+
+                            <section id="line8">
+                                <div class="row">
+                                    <div class="col-md-12 left-align" >
+                                        <h2 class="dark-text">Request <hr></h2>
+                                        <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
+                                    </div>
+                                    <!-- end col -->
+                                </div>
+                            </section>
+
+
+                            <section id="line9">
+                                <div class="row">
+                                    <div class="col-md-12 left-align" >
+                                        <h2 class="dark-text">Report <hr></h2>
+                                        <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
+                                    </div>
+                                    <!-- end col -->
+                                </div>
+                            </section>
+
+
+                            <section id="line10">
+                                <div class="row">
+                                    <div class="col-md-12 left-align" >
+                                        <h2 class="dark-text">Calendar <hr></h2>
+                                        <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
+                                    </div>
+                                    <!-- end col -->
+                                </div>
+                            </section>
+
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    
+                    <!-- end section -->
+
+                    <!-- end section -->
+                </div>
+                <!-- // end .col -->
+
+            </div>
+            <!-- // end .row -->
+
+        </div>
+        <!-- // end container -->
+
+    </div>
+    <!-- end wrapper -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/retina.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+
+    <!-- CUSTOM PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/syntax-highlighter/scripts/shCore.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushXml.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushCss.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushJScript.js"></script>
+
+    
+</body>
+
+</html>
+
+<style>
+
+.logo-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+.images{
+    width: 90% ;
+    height: 100% ;
+}  
+  </style>
