@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "My API",
+    "title": "UAMS API Documentation",
     "version": "v1"
   },
   "paths": {
