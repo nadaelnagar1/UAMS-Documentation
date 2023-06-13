@@ -12,6 +12,7 @@
     <title>UAMS Documentation</title>
 
     <link rel="shortcut icon" href="images/Uams.ico" type="image/x-icon">
+
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/stroke.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -19,9 +20,15 @@
     <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/swagger-ui.css">
+
+    
+
     <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shCore.css" media="all">
     <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shThemeRDark.css" media="all">
+
     <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+
 
 </head>
 
@@ -52,69 +59,57 @@
 
     </script>
 
-    <div id="wrapper">
-        <div class="container">
-
-            <section id="top" class="section docs-heading">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="big-title text-center">
-                            <div class="logo-container">
-                            <img src="images/logo.png">
-                            <h4>Clinic Block Request</h4>
-                            </div>
-                     
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <div id="wrapper" style="background-color: #f9f9f9; max-width: 100vw; overflow-x: clip">
+        <section id="top" style="display: flex; align-items: center; justify-content: center;padding-top: 30px; width: 100vw; ">
+            <img style="width: 90vw" src="images/header.png">
+        </section>
+        <div class="container" style="width: 90vw">
             <hr>
             <!-- end section -->
 
             <div class="row">
 
-                <div class="col-md-3">
-                    <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
+                <div class="col-md-3" >
+                    <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation" style="background-color: white;border-radius: 10px;">
                         <!-- <ul class="nav"> -->
-                            <li><a href="#line1">Getting started</a></li>
+                            <li style=" list-style-type: none "><a style="color: black;font-weight: bold;font-size: 2rem" href="#line1">Getting started</a></li>
                         <ul class="nav">
-                            <li><a href="#installation">Installation</a></li>
-                            <li><a href="#adConfiguration">AD Configuration</a></li>
-                            <li><a href="#helpMailConfiguration">Help Mail Configuration</a></li>
+                            <li on class="arrow-link-container parent"><img class="child" src="images/arrow.png"><a style="font-size: 1.5rem" href="#installation">Installation</a></li>
+                            <li class="arrow-link-container parent"><img class="child" src="images/arrow.png"><a style="font-size: 1.5rem" href="#adConfiguration">AD Configuration</a></li>
+                            <li class="arrow-link-container parent"><img class="child" src="images/arrow.png"><a style="font-size: 1.5rem" href="#helpMailConfiguration">Help Mail Configuration</a></li>
 
                         </ul>
                             
-                            <li><a href="#line2">Project Structure</a>
+                            <li style=" list-style-type: none "><a style="color: black;font-weight: bold; font-size: 2rem" href="#structure">Project Structure</a>
                             </li>
 
                             <ul class="nav">
-                                <li><a href="#line3">Admin</a>
+                                <li ><a href="#admin"><img style="width: 1.5vw" src="images/openArrow.jpg">Admin</a>
                                     <ul class="nav">
-                                        <li><a href="#line4">Systems</a>
+                                        <li ><a href="#systems"><img style="width: 1.5vw" src="images/openArrow.jpg">Systems</a>
                                             <ul class="nav">
-                                                <li class="last-child"><a href="#line5">Permission Definition</a></li>
-                                                <li class="last-child"><a href="#line6">Roles</a></li>
-                                                <li class="last-child"><a href="#line7">ActiveDirectory Management</a></li>
-                                                <li class="last-child"><a href="#line8">Help Configuration</a></li>
+                                                <li class="arrow-link-container last-child parent"><img class="child" src="images/arrow.png"><a style="font-size: 1.5rem" href="#roles">Roles</a></li>
+                                                <li class="arrow-link-container last-child parent"><img class="child" src="images/arrow.png"><a style="font-size: 1.5rem" href="#ad">ActiveDirectory Management</a></li>
+                                                <li class="arrow-link-container last-child parent"><img class="child" src="images/arrow.png"><a style="font-size: 1.5rem" href="#help">Help Configuration</a></li>
                                             </ul>
                                         
                                         </li>
-                                        <li><a href="#line7_1">Clinic</a>
+                                        <li ><a href="#clinic"><img style="width: 1.5vw" src="images/openArrow.jpg">Clinic</a>
                                             <ul class="nav">
-                                                <li class="last-child"><a href="#line7_2">Clinic</a></li>
-                                                <li class="last-child"><a href="#line7_3">Request Reason</a></li>
+                                                <li class="arrow-link-container last-child parent"><img class="child" src="images/arrow.png"><a style="font-size: 1.5rem" href="#clinics">Clinic</a></li>
+                                                <li class="arrow-link-container last-child parent"><img class="child" src="images/arrow.png"><a style="font-size: 1.5rem" href="#requestReasons">Request Reason</a></li>
                                             </ul></li>
-                                        <li><a href="#line7_4">People</a>
+                                        <li ><a href="#people"><img style="width: 1.5vw" src="images/openArrow.jpg">People</a>
                                             <ul class="nav">
-                                                <li class="last-child"><a href="#line7_5">Users</a></li>
-                                                <li class="last-child"><a href="#line7_6">Providers</a></li>
+                                                <li class="arrow-link-container last-child parent"><img class="child" src="images/arrow.png"><a style="font-size: 1.5rem" href="#users">Users</a></li>
+                                                <li class="arrow-link-container last-child parent"><img class="child" src="images/arrow.png"><a style="font-size: 1.5rem" href="#providers">Providers</a></li>
                                             </ul></li>
                                     </ul>
                                 </li>
-                                <li><a href="#line9">Request</a></li>
-                                <li><a href="#line10"> Report</a></li>
-                                <li><a href="#line11">Calendar</a>
-                                <li><a href="#line12">APIs</a>
+                                <li class="arrow-link-container parent"><img class="child" src="images/arrow.png"><a style="font-size: 1.5rem" href="#request">Request</a></li>
+                                <li class="arrow-link-container parent"><img class="child" src="images/arrow.png"><a style="font-size: 1.5rem" href="#report"> Report</a></li>
+                                <li class="arrow-link-container parent"><img class="child" src="images/arrow.png"><a style="font-size: 1.5rem" href="#calendar">Calendar</a>
+                                <li class="arrow-link-container parent"><img class="child" src="images/arrow.png"><a style="font-size: 1.5rem" href="#apis">APIs</a>
                                 </li>
 
                             </ul>
@@ -122,19 +117,18 @@
                         <!-- </ul> -->
                     </nav >
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-9" style="padding-right: 20px;padding-left: 20px;border-radius: 10px;border: solid 0.1px #ececec;">
                     <section class="welcome">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                               <h2 class="dark-text-header">Introduction<hr></h2>
+                               <h2 class="dark-text-header">Introduction</h2>
                                 <div class="row">
 
                                     <div class="col-md-12 full">
                                     
                                              <p>UAMS Clinic Block Request is an online system that support the Provider Time Unavailable policy, To ensure all clinical schedule appropriately designate provider unavailability and that “unavailable time” is
-                                                communicated in a timeframe that minimizes both disruption to clinical operations as well as negative impact on patient care.<br><br> It allows user to enter requests and allows administrators to track and report on requests for clinic blocks and operating room (OR) releases.  
-                                            <br>
+                                                communicated in a timeframe that minimizes both disruption to clinical operations as well as negative impact on patient care.<br><br> It allows user to enter requests and allows administrators to track and report on requests for clinic blocks and operating room (OR) releases
                                            
                                             </p>
                                     </div>
@@ -149,7 +143,7 @@
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text-header">Getting started <hr></h2>
+                                <h2 class="dark-text-header">Getting started </h2>
                             </div>
                             <!-- end col -->
                         </div>
@@ -157,11 +151,11 @@
                         <!-- end row -->
 
                     </section>
-                    <section id="installation" class="section">
+                    <section id="installation">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Installation<hr></h2>
+                                <h2 class="dark-text">Installation</h2>
                                 <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
                             </div>
                             <!-- end col -->
@@ -170,11 +164,11 @@
                         <!-- end row -->
 
                     </section>
-                    <section id="adConfiguration" class="section">
+                    <section id="adConfiguration">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Active Directory Configuration<hr></h2>
+                                <h2 class="dark-text">Active Directory Configuration</h2>
                                 <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
                             </div>
                             <!-- end col -->
@@ -183,11 +177,11 @@
                         <!-- end row -->
 
                     </section>
-                    <section id="helpMailConfiguration" class="section">
+                    <section id="helpMailConfiguration">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Help Mail Configuration<hr></h2>
+                                <h2 class="dark-text">Help Mail Configuration</h2>
                                 <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will English.</p>
                             </div>
                             <!-- end col -->
@@ -198,26 +192,23 @@
                     </section>
                     <!-- end section -->
 
-                    <section id="line2" class="section">
+                    <section id="structure" class="section">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text-header">Project Structure <hr></h2>
+                                <h2 class="dark-text-header">Project Structure</h2>
                             </div>
                             <!-- end col -->
                         </div>
                         <!-- end row -->
-                    
-
-
                     </section>
                     <!-- end section -->
 
-                    <section id="line3" >
+                    <section id="admin" >
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Admin <hr></h2>
+                                <h2 class="dark-text">Admin </h2>
                             </div>
                             <!-- end col -->
                         </div>
@@ -230,20 +221,18 @@
                             <!-- end col -->
                         </div>
 
-
-                  
-
                     </section>
                     <!-- end section -->
 
-                    <section id="line4" class="section">
-
+                    <section id="systems" class="section">
+                        <hr>
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Systems <hr></h2>
-                            </div>
+                                <h2 class="dark-text">Systems </h2>
+
                             <p> The Systems section is where authorized users can access and perform operations on Permission Definitions, Roles, and Active Directory Management.</p>
                             <img  class="images" alt="systems" src="./images/Admin/Systems.PNG">
+                            </div>
                         </div>
                         <!-- end row -->
 
@@ -252,166 +241,140 @@
                     </section>
                     <!-- end section -->
 
-                    <section id="line5" class="section">
+                    <section id="permissionDefinitions" class="section">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Permission-Definition <hr></h2>
+                                <h2 class="dark-text">Permission-Definition</h2>
+                                    <p>Permission Definition is the section where authorized users can view the permissions for every page within the system.</p>
+                                    <img alt="Permission Definition" class="images" src="./images/Admin/Permission-Definition.PNG">
+
                             </div>
                             <!-- end col -->
                         </div>
-                        <!-- end row -->
-
-                        <div class="row">
-                            <p>Permission Definition is the section where authorized users can view the permissions for every page within the system.</p>
-                            <img alt="Permission Definition" class="images" src="./images/Admin/Permission-Definition.PNG">
-
-
-                            <!-- end col -->
-
-                        </div>
-                        <!-- end row -->
 
                     </section>
                     <!-- end section -->
 
-                    <section id="line6" class="section">
+                    <section id="roles" class="section">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Roles <hr></h2>
+                                <h2 class="dark-text">Roles</h2>
+                                <p> Roles is the section where authorized users can : </p>
+                                <ul>
+                                    <li><p> View all existing roles </p></li>
+                                    <img alt="view roles" class="images" src="./images/Admin/viewRoles.PNG">
+                                    <hr>
+                                    <li><p> Create new roles</p></li>
+                                    <img alt="add role" class="images" src="./images/Admin/addRole.PNG">
+                                    <hr>
+                                    <li><p> Assign permissions to roles</p></li>
+                                    <img alt="assign permissions to role" class="images" src="./images/Admin/assignPermToNewRole.PNG">
+                                    <hr>
+                                    <li><p> Update existing roles along with their associated permissions.</p></li>
+                                    <img alt="update role" class="images" src="./images/Admin/updateExistingRole.PNG">
+                                </ul>
                             </div>
                             <!-- end col -->
                         </div>
-                        <!-- end row -->
 
-                        <div class="row">
-
-                            <p> Roles is the section where authorized users can : </p>
-                        <ul>
-                            <li><p>- View all existing roles </p></li>
-                        <img alt="view roles" class="images" src="./images/Admin/viewRoles.PNG">
-                            <li><p>- Create new roles</p></li>
-                        <img alt="add role" class="images" src="./images/Admin/addRole.PNG">
-                            <li><p>- Assign permissions to roles</p></li>
-                        <img alt="assign permissions to role" class="images" src="./images/Admin/assignPermToNewRole.PNG">
-                            <li><p>- Update existing roles along with their associated permissions.</p></li>
-                        <img alt="update role" class="images" src="./images/Admin/updateExistingRole.PNG">
-                          </ul>
-
-                            <!-- end col -->
-
-                        </div>
-                        <!-- end row -->
 
                     </section>
                     <!-- end section -->
 
-                    <section id="line7" class="section">
+                    <section id="ad" class="section">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">ActiveDirectory Management<hr></h2>
-                            </div>
+                                <h2 class="dark-text">ActiveDirectory Management</h2>
+
                             <p>Active Directory Management is the section where authorized users can configure LDAP authentication settings, 
                                 as well as save and reset them as needed.</p>
                                 <img alt="update role" class="images" src="./images/Admin/activeDirectory.PNG">
-                           
+                            </div>
                         </div>
                         <!-- end row -->
                     </section>
 
-                    <section id="line8" class="section">
+                    <section id="help" class="section">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Help Configuration<hr></h2>
-                            </div>
+                                <h2 class="dark-text">Help Configuration</h2>
+
                             <p>Help Configuration is the section where authorized users can configure email settings and save/edit it.</p>
                             <img alt="update role" class="images" src="./images/Admin/helpConfiguration.PNG">
-
+                            </div>
                         </div>
                         <!-- end row -->
                     </section>
 
-                    <section id="line7_1">
-
+                    <section id="clinic">
+                        <hr>
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Clinic <hr></h2>
+                                <h2 class="dark-text">Clinic Management</h2>
 
                             </div>
                         </div>
                     </section>
-                    <section id="line7_2" >
+                    <section id="clinics" >
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Clinics <hr></h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-    
-                        <div class="row">
-    
-                            <p> Add or edit or delete or view clinic and assign users to clinic or remove users from clinic:</p>
-                            
-                                <li><p>- View all existing clinics </p></li>
+                                <h2 class="dark-text">Clinics</h2>
+                                <p> Add or edit or delete or view clinic and assign users to clinic or remove users from clinic:</p>
+                                <ul>
+                                <li><p> View all existing clinics </p></li>
                                 <img class="images" src="./images/Admin/viewAllClinics.PNG">
-                                <li><p>- Create new clinic</p></li>
+                                    <hr>
+                                <li><p> Create new clinic</p></li>
                                 <img class="images" src="./images/Admin/addClinic.PNG">
-                                <li><p>- Edit clinic</p></li>
+                                    <hr>
+                                <li><p> Edit clinic</p></li>
                                 <img class="images" src="./images/Admin/editClinic.PNG">
-                                <li><p>- Assign users to clinic</p></li>
+                                    <hr>
+                                <li><p> Assign users to clinic</p></li>
                                 <img class="images" src="./images/Admin/assignUsersToClinic.PNG">
-                            
-    
-                            <!-- end col -->
-    
-                        </div>
-
-                    </section>
-                     
-                        <!-- end row -->
-
-                        <hr>
-                    <section id="line7_3">
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Request Reason <hr></h2>
+                                </ul>
                             </div>
                             <!-- end col -->
                         </div>
-                        <!-- end row -->
-
-                        <div class="row">
-
-                            <p> Add or edit or delete or disable reason for request:</p>
-                            <ul>
-                                <li><p>- View all existing request reasons </p></li>
-                                <img class="images" src="./images/Admin/viewAllRequestReasons.PNG">
-                                <li><p>- Create new reason</p></li>
-                                <img class="images" src="./images/Admin/addClinic.PNG">
-                                <li><p>- Edit clinic</p></li>
-                                <img class="images" src="./images/Admin/editClinic.PNG">
-                                <li><p>- Assign users to clinic</p></li>
-                                <img class="images" src="./images/Admin/assignUsersToClinic.PNG">
-                            </ul>
-
-                            <!-- end col -->
-
-                        </div>
 
                     </section>
+
                         <!-- end row -->
-                  
 
                         <hr>
-                <section id="line7_4">
+                    <section id="requestReasons">
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Request Reason</h2>
+                                <p> Add or edit or delete or disable reason for request:</p>
+                                <ul>
+                                    <li><p> View all existing request reasons </p></li>
+                                    <img class="images" src="./images/Admin/viewAllRequestReasons.PNG">
+                                    <li><p> Create new reason</p></li>
+                                    <img class="images" src="./images/Admin/addClinic.PNG">
+                                    <li><p> Edit clinic</p></li>
+                                    <img class="images" src="./images/Admin/editClinic.PNG">
+                                    <li><p> Assign users to clinic</p></li>
+                                    <img class="images" src="./images/Admin/assignUsersToClinic.PNG">
+                                </ul>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                    </section>
+                        <!-- end row -->
+
+
+                        <hr>
+                <section id="people">
+                    <hr>
                    <div class="row">
                          <div class="col-md-12 left-align" >
-                           <h2 class="dark-text">People <hr></h2>
+                           <h2 class="dark-text">People</h2>
                            <p> The People section is where authorized users can access and perform operations on Users and Providers.</p>
                            <img class="images" src="./images/Admin/people.PNG">
                         </div>
@@ -422,34 +385,37 @@
 
                         <hr>
 
+                    <section id="users">
                         <div class="row">
-                            <div  >
-                                <h4 id="line7_5">Users </h4>
+                            <div class="col-md-12 left-align" >
+                                <h2 class="dark-text">Users </h2>
                                 <p> Users is the section where authorized users can :</p>
-                                   <p>- view a list of all users and the clinics they are assigned to.
+                                   <p> View a list of all users and the clinics they are assigned to.
                                       It is possible to filter the list based on clinic and user status.</p>
                                       <img class="images" src="./images/Admin/viewusers.PNG">
-                                       <p>- add new users</p>
+                                       <p> Add new users</p>
                                        <img class="images" src="./images/Admin/addUser.png">
-                                       <p>- edit existing users</p> 
+                                       <p> Edit existing users</p>
                                        <img class="images" src="./images/Admin/userEdit.png">
-                                       <p>- impersonate other users if they have been granted delegate access</p>
+                                       <p> Impersonate other users if they have been granted delegate access</p>
                                        <img class="images" src="./images/Admin/userImpersonate.png">
-                                       <p>- disable users</p>
+                                       <p> Disable users</p>
                                        <img class="images" src="./images/Admin/userDisable.png">
-                                       <p>- delete users.</p>
+                                       <p> Delete users.</p>
                                        <img class="images" src="./images/Admin/userDelete.png">
                             </div>
                             <!-- end col -->
                         </div>
+                    </section>
                         <!-- end row -->
 
                         <hr>
 
+                    <section id="providers">
                         <div class="row">
                            
                             <div  >
-                                <h4 id="line7_6">Providers </h4>
+                                <h2 class="dark-text">Providers </h2>
                                 <p>Providers is the section where authorized users can : </p>
                                 <p>view a list of providers and search for specific providers by name,
                                    edit provider information, delete providers from the system, and perform other relevant actions related to provider management. </p>
@@ -457,6 +423,7 @@
                             </div>
                             <!-- end col -->
                         </div>
+                    </section>
                         <!-- end row -->
 
                         <hr>
@@ -464,12 +431,12 @@
 
 
 
-                            <section id="line9">
+                            <section id="request">
                                 <div class="row">
                                     <div class="col-md-12 left-align" >
-                                        <h2 class="dark-text">Request <hr></h2>
-                                        <p> Request is the section where authorized users can view a list of requests 
-                                            and apply filters to narrow down the results.add new requests, edit existing ones, 
+                                        <h2 class="dark-text">Request</h2>
+                                        <p> Request is the section where authorized users can view a list of requests
+                                            and apply filters to narrow down the results.add new requests, edit existing ones,
                                             and delete requests from the system. </p>
                                             <img class="images" src="./images/Admin/request.png">
                                     </div>
@@ -478,24 +445,24 @@
                             </section>
 
 
-                            <section id="line10">
+                            <section id="report">
                                 <div class="row">
                                     <div class="col-md-12 left-align" >
-                                        <h2 class="dark-text">Report <hr></h2>
+                                        <h2 class="dark-text">Report</h2>
                                         <p>The Report is the section where authorized users can generate an Excel sheet of filtered requests.
                                              This feature enables users to generate reports that meet specific criteria and export the results as a downloadable Excel file.</p>
                                              <img class="images" src="./images/Admin/report.png">
-                                            
+
                                     </div>
                                     <!-- end col -->
                                 </div>
                             </section>
 
 
-                            <section id="line11">
+                            <section id="calendar">
                                 <div class="row">
                                     <div class="col-md-12 left-align" >
-                                        <h2 class="dark-text">Calendar <hr></h2>
+                                        <h2 class="dark-text">Calendar</h2>
                                         <p> The Calendar s the section where authorized users can view requests represented in a calendar format and apply filters to narrow down the results.
                                              This feature enables users to visualize requests and their corresponding dates, making it easier to manage and track requests over time.</p>
                                              <img class="images" src="./images/Admin/calendar.png">
@@ -505,10 +472,10 @@
                                 </div>
                             </section>
 
-                               <section id="line12">
+                               <section id="apis">
                                 <div class="row">
                                     <div class="col-md-12 left-align" >
-                                        <h2 class="dark-text">APIs <hr></h2>
+                                        <h2 class="dark-text">APIs</h2>
                                       
                                         <iframe src="swagger-ui-master/dist/index.html" width="100%" height="700"></iframe>
                                     </div>
@@ -543,6 +510,21 @@
     <script src="js/syntax-highlighter/scripts/shBrushXml.js"></script>
     <script src="js/syntax-highlighter/scripts/shBrushCss.js"></script>
     <script src="js/syntax-highlighter/scripts/shBrushJScript.js"></script>
+<script>
+    // const parent = document.querySelector('.parent');
+    // console.log(parent)
+    // const child = document.querySelector('.child');
+    // console.log(child)
+    //
+    // parent.addEventListener('click', () => {
+    //     child.style.display = 'block !important';
+    //     console.log('hereeeeeeee')
+    // });
+    //
+    // parent.addEventListener('blur', () => {
+    //     child.style.display = 'none';
+    // });
+</script>
 
     
 </body>
